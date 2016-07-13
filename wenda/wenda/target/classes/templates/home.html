@@ -1,0 +1,53 @@
+<html>
+<pre>
+This is home html.
+##注释语句
+#*这是一个块注释*#
+$!{value1}
+$!{value2}
+$!{value3}
+<br>
+colors:$!{colors}
+<br>
+#foreach($color in $colors)
+    This is color:$color,$!{foreach.index},$!{foreach.count}
+#end
+<br>
+#foreach($key in $map.keySet())
+    Number:$key,value:$map.get($key)
+#end
+<br>
+#foreach($kv in $map.entrySet())
+    Number:$kv.key,value:$kv.value
+#end
+
+<br>
+    username :$!{user.name},$!{user.getDescription()}
+    #set($title="final")
+    Title:$!{title}
+
+    Parse:#parse("header.html")
+    ##include不会解析里面的变量
+    <br>
+    Include:#include("header.html")
+
+    #macro(render_color,$index,$color)
+        Color Rend
+    #set($helloworld3='$!{hello} world')
+
+    $!{helloworld1}er Macro $index,$color
+    #end
+
+    #foreach($color in $colors)
+        #render_color($foreach.index ,$color)
+    #end
+
+    #set($hello="hello")
+    ##这种方式也可以啊,$hello有什么用
+    #set($helloworld1="$hello world")
+    #set($helloworld2="$!{hello} world")
+    $!{helloworld2}
+    $!{helloworld3}
+
+</pre>
+</html>
