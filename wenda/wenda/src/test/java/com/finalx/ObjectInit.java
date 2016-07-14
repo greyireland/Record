@@ -17,7 +17,7 @@ public class ObjectInit {
     public static void main(String[] args) {
         String[] str=new String[]{"hello","world"};
         String[] str2={"a","b"};
-        //容器初始化
+        //容器zaiinsert ABC初始化
         List<String > list=new ArrayList<>();
         list=Arrays.asList("a","b");
         Arrays.asList(1, 2, 3, 4);
