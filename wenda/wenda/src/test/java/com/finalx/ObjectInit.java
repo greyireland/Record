@@ -15,7 +15,6 @@ public class ObjectInit {
         System.out.println(o.toString());
     }
     public static void main(String[] args) {
-        //数组初始化
         String[] str=new String[]{"hello","world"};
         String[] str2={"a","b"};
         //容器初始化
