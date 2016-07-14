@@ -5,7 +5,7 @@ package com.finalx;
  */
 public class GitTest {
     public void gitTest() {
-        System.out.print("hello world,edit some thing");
+        System.out.print("hello world,edit some,insertABC, thing");
         System.out.print("add some String");
     }
 }
